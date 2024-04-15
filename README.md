@@ -1,6 +1,6 @@
 Role Name
 =========
-prometheus-node-exporter
+node-exporter
 
 Requirements
 ------------

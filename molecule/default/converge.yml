@@ -1,7 +1,6 @@
 ---
 - name: Converge
   hosts: all
+  become: true
   roles:
     - role: node-exporter
-      vars:
-        port: 9100

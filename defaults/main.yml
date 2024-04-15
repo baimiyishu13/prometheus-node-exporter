@@ -1,4 +1,4 @@
 ---
-# defaults file for prometheus-node-exporter
+# defaults file for node-exporter
 port: 9100
 install_mode: "online"
