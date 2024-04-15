@@ -1,10 +1,17 @@
 ---
 # tasks file for prometheus-node-exporter
 
-- name: Download node_exporter
+- name: Download node_exporter (Online installation)
   get_url:
     url: https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz
     dest: /tmp/node_exporter-1.7.0.linux-amd64.tar.gz
+  when: install_mode == "online"
+
+- name: Use local node_exporter package (Offline installation)
+  copy:
+    src: /tmp/node_exporter-1.7.0.linux-amd64.tar.gz
+    dest: /tmp/node_exporter-1.7.0.linux-amd64.tar.gz
+  when: install_mode == "offline"
 
 - name: Extract node_exporter
   unarchive:
