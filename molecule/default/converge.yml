@@ -2,6 +2,6 @@
 - name: Converge
   hosts: all
   roles:
-    - role: prometheus-node-exporter
+    - role: node-exporter
       vars:
         port: 9100
