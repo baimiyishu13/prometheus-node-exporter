@@ -1,5 +1,7 @@
 ---
 galaxy_info:
+  role_name: prometheus-node-exporter
+  namespace: baimiyishu
   author: baimiyishu
   description: An Ansible role for setting up Node Exporter
   min_ansible_version: 2.4
