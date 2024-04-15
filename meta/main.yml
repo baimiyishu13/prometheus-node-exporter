@@ -2,7 +2,7 @@
 dependencies: []
 
 galaxy_info:
-  role_name: prometheus-node-exporter
+  role_name: node-exporter
   author: baimiyishu13
   description: An Ansible role for setting up Node Exporter.
   min_ansible_version: 2.4
@@ -14,5 +14,3 @@ galaxy_info:
     - monitoring
     - prometheus
     - node_exporter
-skip_list:
-  - role_name
